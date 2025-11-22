@@ -3,19 +3,52 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* SKY */
+  --lamaSky: #C3EBFA;
+  --lamaSkyLight: #EDF9FD;
+
+  /* PURPLE */
+  --lamaPurple: #CFCEFF;
+  --lamaPurpleLight: #F1F0FF;
+
+  /* YELLOW */
+  --lamaYellow: #FAE27C;
+  --lamaYellowLight: #FEFCEB;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* TAILWIND CUSTOM COLORS */
+  --color-lamaSky: var(--lamaSky);
+  --color-lamaSkyLight: var(--lamaSkyLight);
+
+  --color-lamaPurple: var(--lamaPurple);
+  --color-lamaPurpleLight: var(--lamaPurpleLight);
+
+  --color-lamaYellow: var(--lamaYellow);
+  --color-lamaYellowLight: var(--lamaYellowLight);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    /* OPTIONAL DARK MODE COLORS */
+    --lamaSky: #9AD7EF;
+    --lamaSkyLight: #DAF2FB;
+
+    --lamaPurple: #BDBAFF;
+    --lamaPurpleLight: #E5E4FF;
+
+    --lamaYellow: #E2CB66;
+    --lamaYellowLight: #F5F2D4;
   }
 }
 

@@ -145,12 +145,11 @@ const Menu = () => {
               className="flex flex-row items-center justify-center lg:justify-start gap-4 text-gray-500 py-1"
             >
               <span> {item.icon}</span>
-              <span>{item.label}</span>
+              <span className="hidden md:block ">{item.label}</span>
             </Link>
           ))}
         </div>
       ))}
-      <h1>Menu</h1>
     </div>
   );
 };
