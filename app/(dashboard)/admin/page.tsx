@@ -1,21 +1,43 @@
+import Announcements from "@/app/components/Announcements";
+import AttendanceChart from "@/app/components/AttendanceChart";
+import CountCharts from "@/app/components/CountCharts";
+import EventCalendar from "@/app/components/EventCalendar";
+import FinanceChart from "@/app/components/FinanceChart";
 import UserCards from "@/app/components/UserCards";
-import React from "react";
 
 const AdminPage = () => {
   return (
-    <div className="p-4 flex flex-col justify-between bg-amber-600 w-full gap-4 md:flex-row">
+    <div className="p-4 flex gap-4 flex-col md:flex-row">
       {/* LEFT */}
-      <div className="w-full lg:w-2/3">
+      <div className="w-full lg:w-2/3 flex flex-col gap-8">
         {/* USER CARDS */}
-        <div className="flex justify-between flex-wrap gap-4">
+        <div className="flex gap-4 justify-between flex-wrap">
           <UserCards type="student" />
           <UserCards type="teacher" />
           <UserCards type="parent" />
           <UserCards type="staff" />
         </div>
+        {/* MIDDLE CHARTS */}
+        <div className="flex gap-4 flex-col lg:flex-row">
+          {/* COUNT CHART */}
+          <div className="w-full lg:w-1/3 h-[450px]">
+            <CountCharts />
+          </div>
+          {/* ATTENDANCE CHART */}
+          <div className="w-full lg:w-2/3 h-[450px]">
+            <AttendanceChart />
+          </div>
+        </div>
+        {/* BOTTOM CHART */}
+        <div className="w-full h-[500px]">
+          <FinanceChart />
+        </div>
       </div>
       {/* RIGHT */}
-      <div className="w-full lg:w-1/3">Right</div>
+      <div className="w-full lg:w-1/3 flex flex-col gap-8">
+        <EventCalendar />
+        <Announcements/>
+      </div>
     </div>
   );
 };
