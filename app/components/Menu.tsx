@@ -6,7 +6,6 @@ import { IoHomeOutline, IoStatsChart, IoSettingsOutline, IoChevronForwardOutline
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 import { MdFamilyRestroom, MdOutlineSubject, MdClass, MdOutlineQuiz, MdAssignment, MdEmojiEvents, MdMessage, MdCampaign, MdLogout } from "react-icons/md";
-import { GiNotebook } from "react-icons/gi";
 import { BsCalendarEvent } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 
@@ -50,48 +49,48 @@ const menuItems = [
         href: "/list/classes",
         visible: ["admin", "teacher"],
       },
-      {
-        icon: <GiNotebook size={20} />,
-        label: "Lessons",
-        href: "/list/lessons",
-        visible: ["admin", "teacher"],
-      },
+      // {
+      //   icon: <GiNotebook size={20} />,
+      //   label: "Lessons",
+      //   href: "/list/lessons",
+      //   visible: ["admin", "teacher"],
+      // },
       {
         icon: <MdOutlineQuiz size={20} />,
         label: "Exams",
         href: "/list/exams",
         visible: ["admin", "teacher", "student", "parent"],
       },
-      {
-        icon: <MdAssignment size={20} />,
-        label: "Assignments",
-        href: "/list/assignments",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
+      // {
+      //   icon: <MdAssignment size={20} />,
+      //   label: "Assignments",
+      //   href: "/list/assignments",
+      //   visible: ["admin", "teacher", "student", "parent"],
+      // },
       {
         icon: <IoStatsChart size={20} />,
         label: "Results",
         href: "/list/results",
         visible: ["admin", "teacher", "student", "parent"],
       },
-      {
-        icon: <MdEmojiEvents size={20} />,
-        label: "Attendance",
-        href: "/list/attendance",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
-      {
-        icon: <BsCalendarEvent size={20} />,
-        label: "Events",
-        href: "/list/events",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
-      {
-        icon: <MdMessage size={20} />,
-        label: "Messages",
-        href: "/list/messages",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
+      // {
+      //   icon: <MdEmojiEvents size={20} />,
+      //   label: "Attendance",
+      //   href: "/list/attendance",
+      //   visible: ["admin", "teacher", "student", "parent"],
+      // },
+      // {
+      //   icon: <BsCalendarEvent size={20} />,
+      //   label: "Events",
+      //   href: "/list/events",
+      //   visible: ["admin", "teacher", "student", "parent"],
+      // },
+      // {
+      //   icon: <MdMessage size={20} />,
+      //   label: "Messages",
+      //   href: "/list/messages",
+      //   visible: ["admin", "teacher", "student", "parent"],
+      // },
       {
         icon: <MdCampaign size={20} />,
         label: "Announcements",
